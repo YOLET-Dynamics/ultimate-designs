@@ -1,17 +1,21 @@
-import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-black py-12 text-white md:py-16">
       <div className="container mx-auto px-4">
         <div className="mb-10 text-center md:mb-12">
-          <h2 className="font-serif text-xl font-normal tracking-wider md:text-2xl">ULTIMATE CONSULTING</h2>
+          <h2 className="font-serif text-xl font-normal tracking-wider md:text-2xl">
+            ULTIMATE CONSULTING
+          </h2>
         </div>
 
         <div className="mb-10 grid gap-8 md:mb-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">Contact</h3>
+            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">
+              Contact
+            </h3>
             <address className="not-italic text-sm text-white/70">
               <p>Bole Road, Friendship Building</p>
               <p>Addis Ababa, Ethiopia</p>
@@ -21,7 +25,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">Navigation</h3>
+            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">
+              Navigation
+            </h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
                 <Link href="/#services" className="hover:text-white">
@@ -47,7 +53,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">Services</h3>
+            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">
+              Services
+            </h3>
             <ul className="space-y-2 text-sm text-white/70">
               <li>
                 <Link href="/#services" className="hover:text-white">
@@ -83,7 +91,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">Connect</h3>
+            <h3 className="mb-4 text-sm font-medium uppercase tracking-wider">
+              Connect
+            </h3>
             <div className="flex space-x-4">
               <Link href="#" className="text-white/70 hover:text-white">
                 <Instagram className="h-5 w-5" />
@@ -106,9 +116,21 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 pt-6 text-center text-xs text-white/50">
-          <p>&copy; {new Date().getFullYear()} Ultimate Consulting. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Ultimate Consulting. All rights
+            reserved.
+          </p>
+          <p className="mt-2">
+            Built by{" "}
+            <Link
+              href="https://yoletent.com"
+              className="hover:text-white underline"
+            >
+              YOLET Labs
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
